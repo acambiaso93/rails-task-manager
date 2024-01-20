@@ -1,0 +1,12 @@
+<div class="d-flex align-items-center">
+  <div class="w-100">
+    <h2><%= @task.title %></h2>
+  </div>
+  <div class="flex-shrink-1"><%= link_to "Edit", edit_task_path(@task) %></div>
+</div>
+
+<div class="edit-box">
+  <p><%= @task.details %></p>
+</div>
+
+<div class="link"><%= link_to "Go back", tasks_path %></div>
